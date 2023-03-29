@@ -1,0 +1,79 @@
+@import url(base.css);
+
+.add{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.add__title {
+    color: var(--color-1);
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add__form{
+    width: 100%;
+}
+
+.add__form .form__label {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add__form .form__label .input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 20px 0;
+    border:  none;
+    border-bottom: 2px solid var(--color-1);
+    outline: none;
+}
+
+.input-message-error{
+    display: none;
+}
+
+.add__form .form__label span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+
+.add__form .form__label .input:focus~span,
+.add__form .form__label .input:focus~span{
+    color: var(--color-1);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.add__form .form__button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add__form button {
+    color: var(--color-1);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid var(--color-1);
+    padding: 12px 25px;
+    transition: all .42s ease;
+    cursor: pointer;
+}
+
+.add__form button:hover {
+    background-color: var(--color-1);
+    color: var(--color-10);
+}

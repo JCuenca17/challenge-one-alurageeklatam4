@@ -1,28 +1,10 @@
 {
-    "producto": [
-        {
-            "id": "1",
-            "name": "monalisa",
-            "price": "150",
-            "img": "./assets/test.jpg"
-        },
-        {
-            "id": "2",
-            "name": "monalisa",
-            "price": "150",
-            "img": "./assets/test.jpg"
-        },
-        {
-            "id": "2",
-            "name": "monalisa",
-            "price": "150",
-            "img": "./assets/test.jpg"
-        },
-        {
-            "id": "2",
-            "name": "monalisa",
-            "price": "150",
-            "img": "./assets/test.jpg"
-        }
-    ]
+  "producto": [
+    {
+      "name": "Monalisa",
+      "price": "50000",
+      "img": "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/mona-lisa_ver_1.jpg",
+      "id": "fe498d7d-6036-439d-9001-534357dc9e57"
+    }
+  ]
 }

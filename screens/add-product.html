@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/add.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +16,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <title>Nea.art</title>
+    <title>Añadir Producto</title>
 </head>
 
 <body>
@@ -23,10 +24,7 @@
     <header class="header">
         <a href="#" class="header__logo">Nea.art</a>
         <ul class="header__nav">
-            <li><a class="header__nav-item" href="index.html">Inicio</a></li>
-            <li><a class="header__nav-item" href="#products">Productos</a></li>
-            <!-- <li><a class="header__nav-item" href="#">Nosotros</a></li> -->
-            <li><a class="header__nav-item" href="#contact">Contacto</a></li>
+            <li><a class="header__nav-item" href="../index.html">Inicio</a></li>
         </ul>
 
         <div class="header__icon">
@@ -37,28 +35,37 @@
     </header>
 
     <main>
-        <section class="main">
-            <div class="main__text">
-                <h1 class="main__text-title">Lorem, ipsum.</h1>
-                <p class="main__text-paragraph">Lorem ipsum dolor sit amet consectetur.</p>
-                <a href="#" class="main__btn">Shop now</a>
-            </div>
+        <section class="add">
+            <h1 class="add__title">Nuevo Producto</h1>
+            <form class="add__form" data-form>
+                <div class="form__box">
+                    <div class="form__label">
+                        <input type="text" class="input" name="name" id="name" data-name>
+                        <span>Nombre del Producto</span>
+                    </div>
+                    <span id="error_name" class="input-message-error"></span>
+                </div>
+                <div class="form__box">
+                    <div class="form__label">
+                        <input type="text" class="input" name="price" id="price" data-price>
+                        <span>Precio del Producto</span>
+                    </div>
+                    <span id="error_price" class="input-message-error"></span>
+                </div>
+                <div class="form__box">
+                    <div class="form__label">
+                        <input type="text" class="input" name="img" id="img" data-img>
+                        <span>Link de la Imagen</span>
+                    </div>
+                    <span id="error_img" class="input-message-error"></span>
+                </div>
+                <div class="form__button">
+                    <button type="submit" class="button">Registrar</button>
+                </div>
+            </form>
         </section>
 
-        <section class="products" id="products">
-            <div class="products__text">
-                <h2 class="products__text-title">Lorem, ipsum. <span class="products__text-span">Products</span></h2>
-            </div>
-
-            <div class="products__add">
-                <a href="./screens/add-product.html">Añadir Producto</a>
-            </div>
-
-            <div class="products__container" data-div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
+        <section class="contact">
             <div class="contact__info">
                 <div class="contact__first">
                     <a href="#" class="contact__logo">Nea.art</a>
@@ -89,8 +96,11 @@
         <p class="footer__text">Copyright © @2023. Todos los Derechos Reservados. Desarrollado por José Cuenca</p>
     </footer>
 
-    <script src="js/navbar.js"></script>
-    <script type="module" src="./js/conexion/product.controller.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../js/conexion/add.controller.js"></script>
 
 </body>
 

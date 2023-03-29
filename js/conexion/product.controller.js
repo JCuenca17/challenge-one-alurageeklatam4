@@ -1,6 +1,6 @@
 import { productServices } from "./product-service.js";
 
-const createNewLine = (id, name, price, img) => {
+const createNewLine = (name, price, img, id) => {
     const line = document.createElement('div');
     const content = `
     <div class="product__row">
@@ -20,8 +20,8 @@ const createNewLine = (id, name, price, img) => {
 const table = document.querySelector('[data-div]');
 
 productServices.listProducts().then((data) => {
-    data.forEach(({id, name, price, img}) => {
-        const newLine = createNewLine(id,name,price,img);
+    data.forEach(({ name, price, img, id }) => {
+        const newLine = createNewLine(name, price, img, id);
         table.appendChild(newLine);
     })
 }).catch((error) => alert('Ocurrió un error'));

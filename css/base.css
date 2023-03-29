@@ -1,0 +1,27 @@
+:root {
+    --color-1: #06211a;
+    --color-2: #124d5e;
+    --color-3: #d47c66;
+    --color-4: #d9bc88;
+    --color-5: #e5e5b6;
+
+    --color-6: #558d9e;
+    --color-7: #d1b4d1;
+    --color-8: #e0cbd0;
+    --color-9: #d8dbbb;
+    --color-10: #f2f6ed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    padding: 5% 10%;
+}

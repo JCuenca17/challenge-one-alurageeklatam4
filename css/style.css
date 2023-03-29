@@ -1,30 +1,4 @@
-:root {
-    --color-1: #06211a;
-    --color-2: #124d5e;
-    --color-3: #d47c66;
-    --color-4: #d9bc88;
-    --color-5: #e5e5b6;
-
-    --color-6: #558d9e;
-    --color-7: #d1b4d1;
-    --color-8: #e0cbd0;
-    --color-9: #d8dbbb;
-    --color-10: #f2f6ed;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Jost', sans-serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-section {
-    padding: 5% 10%;
-}
+@import url(base.css);
 
 /* Header */
 
@@ -68,7 +42,7 @@ section {
     text-transform: capitalize;
     padding: 10px 20px;
     font-weight: 400;
-    transition: all .42 ease;
+    transition: all .42s ease;
 }
 
 .header__nav .header__nav-item:hover {
@@ -85,7 +59,7 @@ section {
     color: var(--color-1);
     font-size: 25px;
     font-weight: 400;
-    transition: all .42 ease;
+    transition: all .42s ease;
 }
 
 .header__icon i:hover {
@@ -104,7 +78,7 @@ section {
 
 .main {
     width: 100%;
-    height: 45vh;
+    height: 100vh;
     /* Aquí abajo deberia ser un backround-img*/
     background-color: var(--color-10);
     background-position: center;
@@ -144,13 +118,15 @@ section {
     text-transform: capitalize;
     border: 2px solid var(--color-1);
     padding: 12px 25px;
-    transition: all .42 ease;
+    transition: all .42s ease;
 }
 
 .main__btn:hover {
     background-color: var(--color-1);
     color: var(--color-10);
 }
+
+/* Products */
 
 .products__text .products__text-title {
     color: var(--color-1);
@@ -162,6 +138,26 @@ section {
 
 .products__text .products__text-span {
     color: #124d5e;
+}
+
+.products__add {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.products__add a {
+    color: var(--color-1);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid var(--color-1);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.products__add a:hover {
+    background-color: var(--color-1);
+    color: var(--color-10);
 }
 
 .products__container {
@@ -185,7 +181,7 @@ section {
     transform: scale(0.9);
 }
 
-.product__text .product__text-edit a{
+.product__text .product__text-edit a {
     position: absolute;
     top: 13px;
     left: 13px;
