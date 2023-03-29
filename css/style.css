@@ -185,7 +185,7 @@ section {
     transform: scale(0.9);
 }
 
-.product__text .product__text-sale {
+.product__text .product__text-edit a{
     position: absolute;
     top: 13px;
     left: 13px;
@@ -195,7 +195,14 @@ section {
     text-transform: uppercase;
     background-color: var(--color-2);
     padding: 3px 10px;
-    border-radius: 2px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product__text .product__text-edit a:hover {
+    background-color: var(--color-7);
+    color: var(--color-1);
 }
 
 .product__price .product__price-name {

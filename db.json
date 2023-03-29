@@ -1,0 +1,28 @@
+{
+    "producto": [
+        {
+            "id": "1",
+            "name": "monalisa",
+            "price": "150",
+            "img": "./assets/test.jpg"
+        },
+        {
+            "id": "2",
+            "name": "monalisa",
+            "price": "150",
+            "img": "./assets/test.jpg"
+        },
+        {
+            "id": "2",
+            "name": "monalisa",
+            "price": "150",
+            "img": "./assets/test.jpg"
+        },
+        {
+            "id": "2",
+            "name": "monalisa",
+            "price": "150",
+            "img": "./assets/test.jpg"
+        }
+    ]
+}
