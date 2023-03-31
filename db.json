@@ -4,7 +4,13 @@
       "name": "Monalisa",
       "price": "50",
       "img": "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/mona-lisa_ver_1.jpg",
-      "id": "fe498d7d-6036-439d-9001-534357dc9e57"
+      "id": "22b3c16e-6c92-4dd4-a033-6d8735d6e51a"
+    },
+    {
+      "name": "Grito",
+      "price": "156",
+      "img": "https://historia.nationalgeographic.com.es/medio/2019/12/12/el-grito-fue-pintado-en-1893-y-probablemente-sea-el-cuadro-mas-famoso-del-pintor-noruego-actualmente-se-encuentra-expuesto-en-la-galeria-nacional-de-oslo_80baad6c_550x807.jpg",
+      "id": "d681999f-6b38-4ed7-8334-9ec04d69ec1e"
     }
   ]
 }

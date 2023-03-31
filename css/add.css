@@ -51,7 +51,7 @@
 }
 
 .add__form .form__label .input:focus~span,
-.add__form .form__label .input:focus~span{
+.add__form .form__label .input:valid~span{
     color: var(--color-1);
     font-size: 12px;
     transform: translateY(-20px);

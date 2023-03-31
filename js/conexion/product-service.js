@@ -24,9 +24,16 @@ const updateProduct = (name, price, img, id) => {
     }).then((response) => response).catch((err) => console.log(err));
 }
 
+const deleteProduct = (id) => {
+    return fetch(`http://localhost:3000/producto/${id}`, {
+        method: 'DELETE',
+    });
+}
+
 export const productServices = {
     listProducts,
     addProducts,
     detailProduct,
     updateProduct,
+    deleteProduct,
 }
