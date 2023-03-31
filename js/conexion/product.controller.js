@@ -6,7 +6,7 @@ const createNewLine = (name, price, img, id) => {
     <div class="product__row">
         <img class="product__img" src="${img}" alt="producto">
         <div class="product__text">
-            <button class="product__text-edit"><a href="#">Edit</a></button>
+            <button class="product__text-edit"><a href="./screens/edit-product.html?id=${id}">Edit</a></button>
         </div>
         <div class="product__price">
             <h4 class="product__price-name">${name}</h4>
