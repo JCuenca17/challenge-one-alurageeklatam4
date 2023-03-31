@@ -1,9 +1,7 @@
-const listProducts = () => fetch('https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json').then(response => response.json()).then(json => {
-    
-});
+const listProducts = () => fetch('http://localhost:3000/producto').then((response) => response.json());
 
 const addProducts = (img, name, price) => {
-    return fetch('https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json', {
+    return fetch('http://localhost:3000/producto', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -13,11 +11,11 @@ const addProducts = (img, name, price) => {
 }
 
 const detailProduct = (id) => {
-    return fetch(`https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json/${id}`).then((response) => response.json());
+    return fetch(`http://localhost:3000/producto/${id}`).then((response) => response.json());
 }
 
 const updateProduct = (name, price, img, id) => {
-    return fetch(`https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json/${id}`, {
+    return fetch(`http://localhost:3000/producto/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -27,7 +25,7 @@ const updateProduct = (name, price, img, id) => {
 }
 
 const deleteProduct = (id) => {
-    return fetch(`https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json/${id}`, {
+    return fetch(`http://localhost:3000/producto/${id}`, {
         method: 'DELETE',
     });
 }
