@@ -37,5 +37,6 @@ form.addEventListener('submit', (event) => {
     const img = document.querySelector('[data-img]').value;
     productServices.updateProduct(name, price, img, id).then(() => {
         window.location.href = '../../index.html';
+        alert('Se ha editado el producto ' + name);
     })
 })

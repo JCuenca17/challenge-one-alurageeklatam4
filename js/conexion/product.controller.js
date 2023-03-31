@@ -18,7 +18,13 @@ const createNewLine = (name, price, img, id) => {
     const btn = line.querySelector('button');
     btn.addEventListener('click', () => {
         const id = btn.id;
-        productServices.deleteProduct(id).then((response) => { }).catch((err) => alert('ERROR'));
+        let option = confirm("Está seguro de eliminar el producto " + name);
+        if (option == true) {
+            alert("Se ha eliminado el producto");
+            productServices.deleteProduct(id).then((response) => { }).catch((err) => alert('ERROR'));
+        } else {
+            alert("No se ha eliminado el producto");
+        }
     });
     return line;
 }

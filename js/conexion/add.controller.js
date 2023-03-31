@@ -9,5 +9,6 @@ form.addEventListener('submit', (event) => {
     const img = document.querySelector('[data-img]').value;
     productServices.addProducts(img, name, price).then(() => {
         window.location.href = '../../index.html';
+        alert('Se ha agregado el producto ' + name);
     }).catch((err) => console.log(err));
 })
