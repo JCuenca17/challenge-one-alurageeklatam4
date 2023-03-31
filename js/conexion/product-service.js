@@ -1,4 +1,6 @@
-const listProducts = () => fetch('https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json').then((response) => response.json());
+const listProducts = () => fetch('https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json').then(response => response.json()).then(json => {
+    
+});
 
 const addProducts = (img, name, price) => {
     return fetch('https://jcuenca17.github.io/challenge-one-alurageeklatam4/db.json', {
