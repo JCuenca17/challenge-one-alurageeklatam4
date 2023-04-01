@@ -5,66 +5,6 @@
       "price": "50",
       "img": "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/mona-lisa_ver_1.jpg",
       "id": "22b3c16e-6c92-4dd4-a033-6d8735d6e51a"
-    },
-    {
-      "name": "Grito",
-      "price": "156",
-      "img": "https://historia.nationalgeographic.com.es/medio/2019/12/12/el-grito-fue-pintado-en-1893-y-probablemente-sea-el-cuadro-mas-famoso-del-pintor-noruego-actualmente-se-encuentra-expuesto-en-la-galeria-nacional-de-oslo_80baad6c_550x807.jpg",
-      "id": "25667d87-b22e-4856-8fa7-b8510893f506"
-    },
-    {
-      "name": "Van Gogh",
-      "price": "4564",
-      "img": "https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydGlzdFwvaW1hZ2VGaWxlXC92aW5jZW50X3Zhbl9nb2doXy1fbmF0aW9uYWxfZ2FsbGVyeV9vZl9hcnQuanBnIiwicmVzaXplLDYwMCw2MDAiXX0.qpXTCW8awxeP3I-V93UaZLZdkluNatOlf7u/uPH24xE0.jpg",
-      "id": "ffb86c58-dc85-4e20-aa59-a26af38e3007"
-    },
-    {
-      "name": "El Beso",
-      "price": "6324",
-      "img": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474300938248.jpg",
-      "id": "242d4942-4fcd-490c-b68d-38e23f150e66"
-    },
-    {
-      "name": "IA",
-      "price": "45",
-      "img": "https://e.rpp-noticias.io/large/2022/09/06/170317_1310112.jpg",
-      "id": "a043628d-72e5-4be6-8cc6-fb71aa0c1043"
-    },
-    {
-      "name": "Abstract",
-      "price": "654",
-      "img": "https://www.unesco.org/sites/default/files/styles/best_image/public/2022-05/shutterstock_1913052853.jpeg?itok=NRJRso-9",
-      "id": "4dd26ab9-bbb6-4683-9bc1-64f4361bfbc2"
-    },
-    {
-      "name": "El arte de vivir",
-      "price": "7987",
-      "img": "https://arthive.net/res/media/img/oy1000/work/3ff/299075@2x.jpeg",
-      "id": "65d20d35-32c1-49bc-aef5-4dc84c359c33"
-    },
-    {
-      "name": "Guernica",
-      "price": "64565",
-      "img": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474287975340.jpg",
-      "id": "65c5bcba-1513-4838-b36e-f3fa9e6f448a"
-    },
-    {
-      "name": "Noche Estrellada",
-      "price": "7897",
-      "img": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474297505881.jpg",
-      "id": "05afbefa-efdb-4cbd-b7b7-1f99021b9218"
-    },
-    {
-      "name": "La Ultima Cena",
-      "price": "789",
-      "img": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474287068105.jpg",
-      "id": "fc6c3e32-9316-435b-aa2d-5f2727f2aa1f"
-    },
-    {
-      "name": "el nacimiento de venus",
-      "price": "324565",
-      "img": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/03/16/16474289394260.jpg",
-      "id": "e035dd0b-2b14-449a-8e1f-84b23ac5b389"
     }
   ]
 }
