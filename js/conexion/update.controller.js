@@ -7,7 +7,7 @@ const getInfo = async () => {
     const id = url.searchParams.get('id');
 
     if (id == null)
-        window.location.href = 'https://jcuenca17.github.io/challenge-one-alurageeklatam4/';
+        window.location.href = 'index.html';
 
     const name = document.querySelector('[data-name]');
     const price = document.querySelector('[data-price]');
@@ -23,7 +23,7 @@ const getInfo = async () => {
             throw new Error();
         }
     } catch (error) {
-        window.location.href = 'https://jcuenca17.github.io/challenge-one-alurageeklatam4/';
+        window.location.href = 'index.html';
     }
 }
 getInfo();
@@ -36,7 +36,7 @@ form.addEventListener('submit', (event) => {
     const price = document.querySelector('[data-price]').value;
     const img = document.querySelector('[data-img]').value;
     productServices.updateProduct(name, price, img, id).then(() => {
-        window.location.href = 'https://jcuenca17.github.io/challenge-one-alurageeklatam4/';
+        window.location.href = 'index.html';
         alert('Se ha editado el producto ' + name);
     })
 })
