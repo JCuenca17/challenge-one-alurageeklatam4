@@ -1,6 +1,6 @@
 @import url(base.css);
 
-.add{
+.add {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -15,31 +15,43 @@
     margin-bottom: 30px;
 }
 
-.add__form{
+.add__form {
     width: 100%;
 }
 
-.add__form .form__label {
+.add__form .form__label,
+.add__form .form__label-invalid {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.add__form .form__label .input{
+.add__form .form__label .input,
+.add__form .form__label-invalid .input {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
     margin: 20px 0;
-    border:  none;
+    border: none;
     border-bottom: 2px solid var(--color-1);
     outline: none;
 }
 
-.input-message-error{
+.add__form .form__label-invalid .input {
+    border-bottom: 2px solid red;
+}
+
+.input-message-error {
     display: none;
 }
 
-.add__form .form__label span {
+.add__form .form__label-invalid .input-message-error {
+    color: red;
+    display: block;
+}
+
+.add__form .form__label span,
+.add__form .form__label-invalid span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -50,14 +62,28 @@
     color: #666;
 }
 
+.add__form .form__label-invalid span {
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
 .add__form .form__label .input:focus~span,
-.add__form .form__label .input:valid~span{
+.add__form .form__label .input:valid~span,
+.add__form .form__label-invalid .input:focus~span,
+.add__form .form__label-invalid .input:valid~span {
     color: var(--color-1);
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.add__form .form__button{
+.add__form .form__label-invalid .input:focus~span,
+.add__form .form__label-invalid .input:valid~span {
+    color: red;
+}
+
+.add__form .form__button {
     text-align: center;
     margin-top: 30px;
 }

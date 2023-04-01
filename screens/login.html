@@ -16,7 +16,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <title>Añadir Producto</title>
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
@@ -36,31 +36,27 @@
 
     <main>
         <section class="add">
-            <h1 class="add__title">Nuevo Producto</h1>
-            <form class="add__form" data-form>
+            <h1 class="add__title">Iniciar Sesión</h1>
+            <form action="index.html" class="add__form">
                 <div class="form__box">
                     <div class="form__label">
-                        <input type="text" class="input" name="name" id="name" required data-name>
-                        <span>Nombre del Producto</span>
+                        <input type="email" class="input" name="email" id="email" required data-tipo="email">
+                        <span>Correo Electronico</span>
+                        <p class="input-message-error"></p>
                     </div>
-                    <span id="error_name" class="input-message-error"></span>
                 </div>
                 <div class="form__box">
                     <div class="form__label">
-                        <input type="text" class="input" name="price" id="price" required data-price>
-                        <span>Precio del Producto</span>
+                        <input type="password" class="input" name="password" id="password" required
+                            pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+                            title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."
+                            data-tipo="password">
+                        <span>Contraseña</span>
+                        <p class="input-message-error"></p>
                     </div>
-                    <span id="error_price" class="input-message-error"></span>
-                </div>
-                <div class="form__box">
-                    <div class="form__label">
-                        <input type="text" class="input" name="img" id="img" required data-img>
-                        <span>Link de la Imagen</span>
-                    </div>
-                    <span id="error_img" class="input-message-error"></span>
                 </div>
                 <div class="form__button">
-                    <button type="submit" class="button">Registrar</button>
+                    <button type="submit" class="button">Iniciar Sesión</button>
                 </div>
             </form>
         </section>
@@ -97,10 +93,7 @@
     </footer>
 
     <script src="../js/navbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="../js/conexion/add.controller.js"></script>
+    <script type="module" src="../js/validacion/app.js"></script>
 
 </body>
 
