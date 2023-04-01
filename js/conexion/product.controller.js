@@ -27,7 +27,7 @@ const createNewLine = (name, price, img, id) => {
         if (option == true) {
             productServices.deleteProduct(id).then((response) => {
                 alert("Se ha eliminado el producto");
-                location.reload();
+                window.location.reload();
             }).catch((err) => alert('ERROR'));
         } else {
             alert("No se ha eliminado el producto");
