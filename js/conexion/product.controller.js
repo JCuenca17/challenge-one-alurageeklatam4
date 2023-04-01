@@ -25,9 +25,10 @@ const createNewLine = (name, price, img, id) => {
         const id = btn.id;
         let option = confirm("Está seguro de eliminar el producto " + name);
         if (option == true) {
-            window.location.href = 'https://jcuenca17.github.io/challenge-one-alurageeklatam4/';
-            alert("Se ha eliminado el producto");
-            productServices.deleteProduct(id).then((response) => { }).catch((err) => alert('ERROR'));
+            productServices.deleteProduct(id).then((response) => {
+                window.location.href = 'https://jcuenca17.github.io/challenge-one-alurageeklatam4/';
+                alert("Se ha eliminado el producto");
+            }).catch((err) => alert('ERROR'));
         } else {
             alert("No se ha eliminado el producto");
         }
