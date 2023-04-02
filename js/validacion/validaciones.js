@@ -16,6 +16,15 @@ const tipoDeErrores = [
 ]
 
 const mensajesDeError = {
+    name: {
+        valueMissing: "Este campo no puede estar vacío"
+    },
+    price: {
+        valueMissing: "Este campo no puede estar vacío",
+    },
+    img: {
+        valueMissing: "Este campo no puede estar vacío"
+    },
     email: {
         valueMissing: "Este campo no puede estar vacío",
         typeMismatch: "El correo no es válido"
@@ -26,10 +35,10 @@ const mensajesDeError = {
     },
 }
 
-function mostarMensajeDeError(tipoDeInput, input){
+function mostarMensajeDeError(tipoDeInput, input) {
     let mensaje = '';
     tipoDeErrores.forEach(error => {
-        if(input.validity[error]){
+        if (input.validity[error]) {
             mensaje = mensajesDeError[tipoDeInput][error];
         }
     });

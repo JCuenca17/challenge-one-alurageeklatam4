@@ -29,7 +29,7 @@
 
         <div class="header__icon">
             <a href="#"><i class="bx bx-search"></i></a>
-            <a href="#"><i class="bx bx-user"></i></a>
+            <a href="../screens/login.html"><i class="bx bx-user"></i></a>
             <div class="bx bx-menu" id="header__menu-icon"></div>
         </div>
     </header>
@@ -40,24 +40,24 @@
             <form class="add__form" data-form>
                 <div class="form__box">
                     <div class="form__label">
-                        <input type="text" class="input" name="name" id="name" required data-name>
+                        <input type="text" class="input" name="name" id="name" required data-name data-tipo="name">
                         <span>Nombre del Producto</span>
+                        <p class="input-message-error"></p>
                     </div>
-                    <span id="error_name" class="input-message-error"></span>
                 </div>
                 <div class="form__box">
                     <div class="form__label">
-                        <input type="text" class="input" name="price" id="price" required data-price>
+                        <input type="text" class="input" name="price" id="price" required data-price data-tipo="price">
                         <span>Precio del Producto</span>
+                        <p class="input-message-error"></p>
                     </div>
-                    <span id="error_price" class="input-message-error"></span>
                 </div>
                 <div class="form__box">
                     <div class="form__label">
-                        <input type="text" class="input" name="img" id="img" required data-img>
+                        <input type="text" class="input" name="img" id="img" required data-img data-tipo="img">
                         <span>Link de la Imagen</span>
+                        <p class="input-message-error"></p>
                     </div>
-                    <span id="error_img" class="input-message-error"></span>
                 </div>
                 <div class="form__button">
                     <button type="submit" class="button">Editar</button>
@@ -98,6 +98,7 @@
 
     <script src="../js/navbar.js"></script>
     <script type="module" src="../js/conexion/update.controller.js"></script>
+    <script type="module" src="../js/validacion/app.js"></script>
 
 </body>
 
