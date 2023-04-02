@@ -21,6 +21,7 @@ const mensajesDeError = {
     },
     price: {
         valueMissing: "Este campo no puede estar vacío",
+        patternMismatch: "Solo debe ingresar numeros"
     },
     img: {
         valueMissing: "Este campo no puede estar vacío"
