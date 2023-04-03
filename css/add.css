@@ -5,6 +5,7 @@
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
+    transition: .3s;
 }
 
 .add__title {
@@ -102,4 +103,10 @@
 .add__form button:hover {
     background-color: var(--color-1);
     color: var(--color-10);
+}
+
+@media only screen and (max-width:768px) {
+    .add {
+        margin-top: 100px;
+    }
 }

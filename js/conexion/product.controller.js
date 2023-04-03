@@ -11,7 +11,7 @@ const createNewLine = (name, price, img, id) => {
             <h3>${name}</h3>
             <span>$${price}</span>
             <div class="product__description">
-                <a href="#">Conoce Más</a>
+                <a href="/screens/detail-product.html">Conoce Más</a>
             </div>
         </div>
         <div class="product__text">

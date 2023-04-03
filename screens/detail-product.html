@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/add.css">
+    <link rel="stylesheet" href="../css/detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +16,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <title>Iniciar Sesión</title>
+    <title>Añadir Producto</title>
 </head>
 
 <body>
@@ -29,38 +29,34 @@
 
         <div class="header__icon">
             <a href="#"><i class="bx bx-search"></i></a>
-            <a href="#"><i class="bx bx-user"></i></a>
+            <a href="../screens/login.html"><i class="bx bx-user"></i></a>
             <div class="bx bx-menu" id="header__menu-icon"></div>
         </div>
     </header>
 
     <main>
-        <section class="add">
-            <h1 class="add__title">Iniciar Sesión</h1>
-            <form action="index.html" class="add__form">
-                <div class="form__box">
-                    <div class="form__label">
-                        <input type="email" class="input" name="email" id="email" required data-tipo="email">
-                        <span>Correo Electronico</span>
-                        <p class="input-message-error"></p>
-                    </div>
-                </div>
-                <div class="form__box">
-                    <div class="form__label">
-                        <input type="password" class="input" name="password" id="password" required
-                            pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
-                            title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."
-                            data-tipo="password">
-                        <span>Contraseña</span>
-                        <p class="input-message-error"></p>
-                    </div>
-                </div>
-                <div class="form__button">
-                    <button type="submit" class="button">Iniciar Sesión</button>
-                </div>
-            </form>
-        </section>
 
+        <section class="detail">
+            <div class="detail__container">
+                <div class="detail__box">
+                    <div class="detail__img">
+                        <div class="detail__img-holder">
+                            <img src="/img2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="detail__info">
+                        <h1>Monalisa</h1>
+                        <span>$50</span>
+                    </div>
+                    <div class="detail__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab itaque nemo unde odio, fuga
+                            voluptas accusantium id vitae quae culpa assumenda enim eveniet maiores nisi cum at quasi
+                            voluptate facilis molestiae amet! Maiores consequatur ut architecto debitis explicabo dicta
+                            dolores ullam provident sunt at ipsam nobis, itaque soluta magni beatae!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="contact">
             <div class="contact__info">
                 <div class="contact__first">
@@ -86,6 +82,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -93,7 +90,7 @@
     </footer>
 
     <script src="../js/navbar.js"></script>
-    <script type="module" src="../js/validacion/app.js"></script>
+
 </body>
 
 </html>
