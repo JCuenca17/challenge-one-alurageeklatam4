@@ -3,7 +3,10 @@ import { productServices } from "./product-service.js";
 const showInfo = async () => {
     const url = new URL(window.location);
     const id = url.searchParams.get('id');
-    
+
+    if (id == null)
+        window.location.href = '../index.html';
+
     const product = await productServices.detailProduct(id)
 
     const line = document.querySelector('[data-div]');
