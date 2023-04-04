@@ -40,7 +40,7 @@
             <form class="add__form" data-form>
                 <div class="form__box">
                     <div class="form__label">
-                        <input type="text" class="input" name="name" id="name" required data-name data-tipo="name">
+                        <input type="text" class="input" name="name" id="name" maxlength="20" required data-name data-tipo="name">
                         <span>Nombre del Producto</span>
                         <p class="input-message-error"></p>
                     </div>
@@ -49,6 +49,13 @@
                     <div class="form__label">
                         <input type="text" class="input" name="price" id="price" pattern="^[0-9]+" required data-price data-tipo="price">
                         <span>Precio del Producto</span>
+                        <p class="input-message-error"></p>
+                    </div>
+                </div>
+                <div class="form__box">
+                    <div class="form__label">
+                        <input type="text" class="input" name="description" minlength="5" maxlength="30" id="description" required data-description data-tipo="description">
+                        <span>Descripción del Producto</span>
                         <p class="input-message-error"></p>
                     </div>
                 </div>

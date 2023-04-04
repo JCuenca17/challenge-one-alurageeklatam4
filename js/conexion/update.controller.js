@@ -12,13 +12,15 @@ const getInfo = async () => {
     const name = document.querySelector('[data-name]');
     const price = document.querySelector('[data-price]');
     const img = document.querySelector('[data-img]');
+    const description = document.querySelector('[data-description]')
 
     try {
         const product = await productServices.detailProduct(id);
-        if (product.name && product.price && product.img) {
+        if (product.name && product.price && product.img && product.description) {
             name.value = product.name;
             price.value = product.price;
             img.value = product.img;
+            description.value = product.description;
         } else {
             throw new Error();
         }
@@ -35,7 +37,8 @@ form.addEventListener('submit', (event) => {
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
     const img = document.querySelector('[data-img]').value;
-    productServices.updateProduct(name, price, img, id).then(() => {
+    const description = document.querySelector('[data-description].value').value;
+    productServices.updateProduct(name, price, img, description, id).then(() => {
         window.location.href = '../index.html';
         alert('Se ha editado el producto ' + name);
     })

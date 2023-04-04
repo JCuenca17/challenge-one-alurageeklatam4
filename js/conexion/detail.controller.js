@@ -19,10 +19,7 @@ const showInfo = async () => {
             <span>$${product.price}</span>
         </div>
         <div class="detail__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab itaque nemo unde odio, fuga
-                voluptas accusantium id vitae quae culpa assumenda enim eveniet maiores nisi cum at quasi
-                voluptate facilis molestiae amet! Maiores consequatur ut architecto debitis explicabo dicta
-                dolores ullam provident sunt at ipsam nobis, itaque soluta magni beatae!</p>
+            <p>${product.description}</p>
         </div>
     </div>`;
     line.innerHTML = content;

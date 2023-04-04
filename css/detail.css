@@ -21,7 +21,7 @@
     margin: 15px 0;
     width: 950px;
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "img info"

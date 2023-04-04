@@ -13,6 +13,7 @@ const tipoDeErrores = [
     'valueMissing',
     'typeMismatch',
     'patternMismatch',
+    'tooShort',
 ]
 
 const mensajesDeError = {
@@ -25,6 +26,11 @@ const mensajesDeError = {
     },
     img: {
         valueMissing: "Este campo no puede estar vacío"
+    },
+    description: {
+        valueMissing: "Este campo no puede estar vacío",
+        patternMismatch: "La descripción debe tener al entre 1 y 30 caracteres",
+        tooShort: "Esta descripción es muy corta"
     },
     email: {
         valueMissing: "Este campo no puede estar vacío",

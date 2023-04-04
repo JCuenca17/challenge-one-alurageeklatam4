@@ -1,12 +1,14 @@
+//https://db-json-x3qj.onrender.com/producto
+
 const listProducts = () => fetch('https://db-json-x3qj.onrender.com/producto').then((response) => response.json());
 
-const addProducts = (img, name, price) => {
+const addProducts = (img, name, price, description) => {
     return fetch('https://db-json-x3qj.onrender.com/producto', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ name, price, img, id: uuid.v4() })
+        body: JSON.stringify({ name, price, img, description, id: uuid.v4() })
     });
 }
 
@@ -20,7 +22,7 @@ const updateProduct = (name, price, img, id) => {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ name, price, img }),
+        body: JSON.stringify({ name, price, img, description }),
     }).then((response) => response).catch((err) => console.log(err));
 }
 
