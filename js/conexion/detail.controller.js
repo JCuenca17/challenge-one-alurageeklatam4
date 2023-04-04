@@ -1,17 +1,22 @@
 import { productServices } from "./product-service.js";
 
-const showInfo = (name, price, img) => {
-    const line = document.createElement('div');
+const showInfo = async () => {
+    const url = new URL(window.location);
+    const id = url.searchParams.get('id');
+    
+    const product = await productServices.detailProduct(id)
+
+    const line = document.querySelector('[data-div]');
     const content = `
     <div class="detail__box">
         <div class="detail__img">
             <div class="detail__img-holder">
-                <img src="${img}" alt="">
+                <img src="${product.img}" alt="">
             </div>
         </div>
         <div class="detail__info">
-            <h1>${name}</h1>
-            <span>$${price}</span>
+            <h1>${product.name}</h1>
+            <span>$${product.price}</span>
         </div>
         <div class="detail__description">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab itaque nemo unde odio, fuga

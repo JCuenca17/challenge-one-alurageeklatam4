@@ -21,7 +21,7 @@
     margin: 15px 0;
     width: 950px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "img info"
@@ -53,6 +53,8 @@
 .detail__box .detail__info span {
     font-weight: 800;
     font-size: 25px;
+    position: absolute;
+    align-self: flex-end;
 }
 
 .detail__box .detail__description {
@@ -78,11 +80,6 @@
 @media screen and (max-width:991px) and (min-width:769px) {
     .detail {
         margin-top: 100px;
-    }
-
-    .detail__box .detail__info span {
-        position: absolute;
-        align-self: flex-end;
     }
 }
 
