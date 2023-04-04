@@ -16,7 +16,7 @@ const detailProduct = (id) => {
     return fetch(`https://db-json-x3qj.onrender.com/producto/${id}`).then((response) => response.json());
 }
 
-const updateProduct = (name, price, img, id) => {
+const updateProduct = (name, price, img, description, id) => {
     return fetch(`https://db-json-x3qj.onrender.com/producto/${id}`, {
         method: 'PUT',
         headers: {

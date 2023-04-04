@@ -89,7 +89,8 @@
     margin-top: 30px;
 }
 
-.add__form button {
+.add__form button,
+.add__form a {
     color: var(--color-1);
     font-size: 16px;
     font-weight: 500;
@@ -100,7 +101,8 @@
     cursor: pointer;
 }
 
-.add__form button:hover {
+.add__form button:hover,
+.add__form a:hover {
     background-color: var(--color-1);
     color: var(--color-10);
 }

@@ -12,7 +12,7 @@ const getInfo = async () => {
     const name = document.querySelector('[data-name]');
     const price = document.querySelector('[data-price]');
     const img = document.querySelector('[data-img]');
-    const description = document.querySelector('[data-description]')
+    const description = document.querySelector('[data-description]');
 
     try {
         const product = await productServices.detailProduct(id);
@@ -37,7 +37,7 @@ form.addEventListener('submit', (event) => {
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
     const img = document.querySelector('[data-img]').value;
-    const description = document.querySelector('[data-description].value').value;
+    const description = document.querySelector('[data-description]').value;
     productServices.updateProduct(name, price, img, description, id).then(() => {
         window.location.href = '../index.html';
         alert('Se ha editado el producto ' + name);
